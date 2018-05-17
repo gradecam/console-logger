@@ -43,7 +43,7 @@ export class Logger {
      */
     debug(...args: any[]) {
         if (!(levelMap.debug >= levelMap[this.level])) { return; }
-        console.debug.apply(console, args);
+        console.log.apply(console, args);
     }
 
     /**
